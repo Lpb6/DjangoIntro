@@ -1,0 +1,68 @@
+body {
+  background: url('/static/img/splatterpaintbg.jpg');
+}
+a {
+  text-decoration: none;
+}
+.cart-btn {
+  position: fixed;
+  top: 3.5rem;
+  right: 10px;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 0.5rem;
+  text-align: center;
+}
+.box {
+  width: 400px;
+  max-width: 90%;
+  transition: transform 0.5s;
+  border: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.616);
+  border-radius: 10px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.box:hover {
+  transform: scale(1.2);
+}
+#val {
+  margin-top: 2rem;
+  border: 2px solid orange;
+  border-radius: 4px;
+  padding: 12px 20px;
+  text-align: center;
+}
+#request-validation {
+  margin-block: 1rem;
+  font-weight: bold;
+}
+.hidden {
+  visibility: hidden;
+}
+.success {
+  color: rgb(1, 150, 1);
+}
+.error {
+  color: red;
+}
+
+#add-to-cart {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+}
+#add-to-cart:hover {
+  background-color: rgb(255, 215, 140);
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+}

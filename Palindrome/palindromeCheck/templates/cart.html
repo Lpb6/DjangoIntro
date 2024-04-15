@@ -1,0 +1,17 @@
+{% extends 'main.html' %} {% load static %} {% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'styles/cart.css' %}" />
+{% endblock %} {% block content %}
+
+<a href="{% url 'index' %}" class="cart-btn">
+  <p><span class="fa-solid fa-house"></span> Home</p>
+</a>
+
+<div class="container">
+  <div class="counter">
+    <p>Quantity Checked: <span id="cart-amt"></span></p>
+  </div>
+</div>
+
+{% endblock content %} {% block scripts %}
+<script src="{% static 'js/cart.js' %}"></script>
+{% endblock %}

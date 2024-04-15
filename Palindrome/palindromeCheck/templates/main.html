@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome Identifier</title>
+    {% block styles %}{% endblock %}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'styles/main.css' %}"
+    />
+    <script
+      src="https://kit.fontawesome.com/29bd56e359.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header-bar">
+      <p>Palindrome Identifier</p>
+    </div>
+    {% block content %} {% endblock content %}
+    <div class="footer-container">
+      <div>
+        <div class="upper-footer">
+          Palindrome Identifier for Django Practice
+        </div>
+        <p class="lower-footer">Liam Brown 2024</p>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    {% block scripts %}{% endblock %}
+  </body>
+</html>

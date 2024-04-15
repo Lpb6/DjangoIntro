@@ -1,0 +1,66 @@
+:root {
+  --ff-sans: Verdana, Geneva, Tahoma, sans-serif;
+  --fw-light: 300;
+  --fw-normal: 500;
+  --fw-bold: 700;
+
+  --fs-300: 1rem;
+  --fs-600: 1.5rem;
+  --fs-900: 2rem;
+
+  --clr-neutral-900: hsl(234, 12%, 34%);
+  --clr-neutral-400: hsl(229, 6%, 66%);
+  --clr-neutral-100: hsl(0, 0%, 98%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: var(--ff-sans);
+}
+
+.header-bar {
+  background-color: var(--clr-neutral-900);
+  padding-block: 1rem;
+  color: var(--clr-neutral-100);
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+.footer-container {
+  background-color: var(--clr-neutral-400);
+  padding-block: 1rem;
+  color: var(--clr-neutral-900);
+  display: grid;
+  grid-template-columns: 90%;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.upper-footer {
+  margin-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--clr-neutral-900);
+}
+.lower-footer {
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+}

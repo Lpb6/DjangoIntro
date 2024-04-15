@@ -1,0 +1,22 @@
+{% extends 'main.html' %} {% load static %} {% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'styles/index.css' %}" />
+{% endblock %} {% block content %}
+<a href="{% url 'cart' %}" class="cart-btn">
+  <p>
+    <span class="fa-solid fa-cart-shopping"></span> Cart (<span id="cart-amt"
+      >0</span
+    >)
+  </p>
+</a>
+<div class="box">
+  <div><h3>Enter a three digit number</h3></div>
+  <div></div>
+  <form>
+    <input type="number" id="val" />
+    <p id="request-validation" class="hidden">Added to Cart</p>
+    <input type="button" value="Add to Cart" id="add-to-cart" />
+  </form>
+</div>
+{% endblock content %} {% block scripts %}
+<script src="{% static 'js/index.js' %}"></script>
+{% endblock %}
